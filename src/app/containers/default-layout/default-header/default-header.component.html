@@ -1,4 +1,4 @@
-<!--<c-header class="mb-4 d-print-none" position="sticky">-->
+<!--c-header class="mb-4 d-print-none" position="sticky">-->
 <ng-container>
   <c-container [fluid]="true">
     <button
@@ -19,11 +19,11 @@
         </a>
       </c-nav-item>
       <c-nav-item>
-        <a cNavLink routerLink="/users" routerLinkActive="active">Users</a>
+        <a cNavLink routerLink="/theme/colors" routerLinkActive="active">Leaderboard</a>
       </c-nav-item>
       <c-nav-item>
-        <a cNavLink routerLink="/settings" routerLinkActive="active">
-          Settings
+        <a cNavLink routerLink="/theme/typography" routerLinkActive="active">
+          Compte
         </a>
       </c-nav-item>
     </c-header-nav>
@@ -48,13 +48,6 @@
     <c-header-nav class="ms-3">
       <ng-container *ngTemplateOutlet="userDropdown"></ng-container>
     </c-header-nav>
-
-  </c-container>
-  <c-header-divider></c-header-divider>
-  <c-container [fluid]="true">
-    <c-breadcrumb-router class="ms-2"></c-breadcrumb-router>
-  </c-container>
-</ng-container>
 <!--</c-header>-->
 
 <ng-template #userDropdown>
