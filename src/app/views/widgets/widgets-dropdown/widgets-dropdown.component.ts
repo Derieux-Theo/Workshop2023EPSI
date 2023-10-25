@@ -20,7 +20,7 @@ export class WidgetsDropdownComponent implements OnInit, AfterContentInit {
 
   constructor(
     private changeDetectorRef: ChangeDetectorRef
-  ) {}
+  ) { }
 
   data: any[] = [];
   options: any[] = [];
@@ -47,8 +47,8 @@ export class WidgetsDropdownComponent implements OnInit, AfterContentInit {
       label: 'My First dataset',
       backgroundColor: 'transparent',
       borderColor: 'rgba(255,255,255,.55)',
-      pointBackgroundColor: getStyle('--cui-primary'),
-      pointHoverBorderColor: getStyle('--cui-primary'),
+      pointBackgroundColor: getStyle('--cui-success'),
+      pointHoverBorderColor: getStyle('--cui-success'),
       data: [65, 59, 84, 84, 51, 55, 40]
     }], [{
       label: 'My Second dataset',
@@ -176,7 +176,7 @@ export class WidgetsDropdownComponent implements OnInit, AfterContentInit {
 })
 export class ChartSample implements AfterViewInit {
 
-  constructor() {}
+  constructor() { }
 
   @ViewChild('chart') chartComponent!: ChartjsComponent;
 

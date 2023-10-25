@@ -1,18 +1,11 @@
 <c-row>
-<c-card class="mb-4">
+  <c-card class="mb-4">
     <c-row>
       <c-col xs>
         <c-card class="mb-4">
           <c-card-header>Users</c-card-header>
           <c-card-body>
-            <table
-              [hover]="true"
-              [responsive]="true"
-              [striped]="true"
-              align="middle"
-              cTable
-              class="mb-0 border"
-            >
+            <table [hover]="true" [responsive]="true" [striped]="true" align="middle" cTable class="mb-0 border">
               <thead cTableColor="light">
                 <tr>
                   <th class="text-center">
@@ -21,18 +14,13 @@
                   <th>User</th>
                   <th class="text-center">Country</th>
                   <th>Usage</th>
-                  <th class="text-center">Payment Method</th>
                   <th>Activity</th>
                 </tr>
               </thead>
               <tbody>
                 <tr *ngFor="let user of users; index as i">
                   <td class="text-center">
-                    <c-avatar
-                      size="md"
-                      src="{{ user.avatar }}"
-                      status="{{ user.status }}"
-                    ></c-avatar>
+                    <c-avatar size="md" src="{{ user.avatar }}" status="{{ user.status }}"></c-avatar>
                   </td>
                   <td>
                     <div>{{ user.name }}</div>
@@ -43,13 +31,8 @@
                     </div>
                   </td>
                   <td class="text-center">
-                    <svg
-                      cIcon
-                      id="{{ user.country + user.name }}"
-                      name="cif{{ user.country }}"
-                      size="xl"
-                      title="{{ user.country }}"
-                    ></svg>
+                    <svg cIcon id="{{ user.country + user.name }}" name="cif{{ user.country }}" size="xl"
+                      title="{{ user.country }}"></svg>
                   </td>
                   <td>
                     <div class="d-flex justify-content-between">
@@ -63,14 +46,8 @@
                       </div>
                     </div>
                     <c-progress thin>
-                      <c-progress-bar
-                        [value]="user.usage"
-                        color="{{ user.color }}"
-                      ></c-progress-bar>
+                      <c-progress-bar [value]="user.usage" color="{{ user.color }}"></c-progress-bar>
                     </c-progress>
-                  </td>
-                  <td class="text-center">
-                    <svg cIcon name="cibCc{{ user.payment }}" size="xl"></svg>
                   </td>
                   <td>
                     <div class="small text-medium-emphasis">Last login</div>
@@ -81,7 +58,7 @@
             </table>
           </c-card-body>
         </c-card>
-      </c-col> 
+      </c-col>
     </c-row>
   </c-card>
 </c-row>
