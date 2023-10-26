@@ -10,7 +10,7 @@ export class WidgetsBrandComponent implements AfterContentInit {
 
   constructor(
     private changeDetectorRef: ChangeDetectorRef
-  ) {}
+  ) { }
 
   @Input() withCharts?: boolean;
   // @ts-ignore
@@ -55,7 +55,7 @@ export class WidgetsBrandComponent implements AfterContentInit {
   brandData = [
     {
       icon: 'cibFacebook',
-      values: [{ title: 'friends', value: '89K' }, { title: 'feeds', value: '459' }],
+      values: [{ title: 'friends', value: '89' }, { title: 'feeds', value: '42' }],
       capBg: { '--cui-card-cap-bg': '#3b5998' },
       labels: [...this.labels],
       data: {
@@ -65,7 +65,7 @@ export class WidgetsBrandComponent implements AfterContentInit {
     },
     {
       icon: 'cibTwitter',
-      values: [{ title: 'followers', value: '973k' }, { title: 'tweets', value: '1.792' }],
+      values: [{ title: 'followers', value: '97' }, { title: 'tweets', value: '17' }],
       capBg: { '--cui-card-cap-bg': '#00aced' },
       data: {
         labels: [...this.labels],
@@ -74,7 +74,7 @@ export class WidgetsBrandComponent implements AfterContentInit {
     },
     {
       icon: 'cib-linkedin',
-      values: [{ title: 'contacts', value: '500' }, { title: 'feeds', value: '1.292' }],
+      values: [{ title: 'contacts', value: '246' }, { title: 'feeds', value: '123' }],
       capBg: { '--cui-card-cap-bg': '#4875b4' },
       data: {
         labels: [...this.labels],
@@ -83,7 +83,7 @@ export class WidgetsBrandComponent implements AfterContentInit {
     },
     {
       icon: 'cilCalendar',
-      values: [{ title: 'events', value: '12+' }, { title: 'meetings', value: '4' }],
+      values: [{ title: 'events', value: '12' }, { title: 'meetings', value: '4' }],
       color: 'warning',
       data: {
         labels: [...this.labels],

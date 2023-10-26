@@ -49,29 +49,29 @@ export class DashboardChartsData {
     let labels: string[] = [];
     if (period === 'Month') {
       labels = [
-        'January',
-        'February',
-        'March',
-        'April',
-        'May',
-        'June',
-        'July',
-        'August',
-        'September',
-        'October',
-        'November',
-        'December'
+        'Janvier',
+        'Février',
+        'Mars',
+        'Avril',
+        'Mai',
+        'Juin',
+        'Juillet',
+        'Aout',
+        'Septembre',
+        'Octobre',
+        'Novembre',
+        'Décembre'
       ];
     } else {
       /* tslint:disable:max-line-length */
       const week = [
-        'Monday',
-        'Tuesday',
-        'Wednesday',
-        'Thursday',
-        'Friday',
-        'Saturday',
-        'Sunday'
+        'Lundi',
+        'Mardi',
+        'Mercredi',
+        'Jeudi',
+        'Vendredi',
+        'Samedi',
+        'Dimanche'
       ];
       labels = week.concat(week, week, week);
     }
@@ -125,7 +125,7 @@ export class DashboardChartsData {
       },
       tooltip: {
         callbacks: {
-          labelColor: function(context: any) {
+          labelColor: function (context: any) {
             return {
               backgroundColor: context.dataset.borderColor
             };
