@@ -15,7 +15,7 @@ export const navItems: INavData[] = [
     name: 'Compte'
   },
   {
-    name: 'Leaderboard',
+    name: 'Classement',
     url: '/theme/colors',
     iconComponent: { name: 'cil-star' }
   },
